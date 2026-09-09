@@ -258,7 +258,7 @@ void PR13(int n)
         cout << endl;
     }
 
-    cout << "Professional Method";
+    cout << "Professional Method\n";
     for (int i = 1; i <= n; i++)
     {
         for (char ch = 'A'; ch < 'A' + i; ch++)
