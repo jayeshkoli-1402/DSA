@@ -1,0 +1,7 @@
+{
+    // Use the C/C++ language server for better diagnostics
+    "C_Cpp.intelliSenseEngine": "Default",
+    // Enable error squiggles so the editor shows red underlines for diagnostics
+    // Options: "Enabled", "EnabledIfIncludesResolved", "Disabled"
+    "C_Cpp.errorSquiggles": "Enabled"
+}
