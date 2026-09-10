@@ -268,6 +268,64 @@ void PR13(int n)
         cout << endl;
     }
 }
+
+void PR14(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (char j = 1; j <= (n - i + 1); j++)
+        {
+            char ch = 'A' + j - 1;
+            cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
+
+void PR15(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (char j = 1; j <= i; j++)
+        {
+            char ch = 'A' + i - 1;
+            cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
+
+void PR16(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int x = 1; x <= (n - i); x++)
+        {
+            cout << " ";
+        }
+
+        char ch = 64;
+        for (int z = 1; z <= (i * 2) - 1; z++)
+        {
+            if (z <= i)
+            {
+                ch += 1;
+                cout << ch;
+            }
+            else
+            {
+                ch -= 1;
+                cout << ch;
+            }
+        }
+
+        for (int x = 1; x <= (n - i); x++)
+        {
+            cout << " ";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
     // PR1(5);
@@ -282,5 +340,8 @@ int main()
     // PR10(5);
     // PR11(5);
     // PR12(5);
-    PR13(5);
+    // PR13(5);
+    // PR14(5);
+    // PR15(5);
+    PR16(5);
 }
