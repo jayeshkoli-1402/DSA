@@ -326,6 +326,25 @@ void PR16(int n)
         cout << endl;
     }
 }
+
+void PR17(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        char ch = 'A';
+        ch += n - i;
+        for (int j = 1; j <= i; j++)
+        {
+            cout << ch << " ";
+            ch++;
+        }
+        cout << endl;
+    }
+}
+
+void PR18(int n)
+{
+}
 int main()
 {
     // PR1(5);
@@ -343,5 +362,7 @@ int main()
     // PR13(5);
     // PR14(5);
     // PR15(5);
-    PR16(5);
+    // PR16(5);
+    // PR17(5);
+    PR18(5);
 }
