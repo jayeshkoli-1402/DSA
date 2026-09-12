@@ -344,6 +344,39 @@ void PR17(int n)
 
 void PR18(int n)
 {
+    for (int i = 1; i <= n / 2; i++)
+    {
+        for (int j = i; j <= n / 2; j++)
+        {
+            cout << "*";
+        }
+        for (int x = 1; x <= (i * 2) - 2; x++)
+        {
+            cout << " ";
+        }
+        for (int k = i; k <= n / 2; k++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    for (int i = 1; i <= n / 2; i++)
+    {
+        for (int b = 1; b <= i; b++)
+        {
+            cout << "*";
+        }
+        for (int m = 1; m <= n - (i * 2); m++)
+        {
+            cout << " ";
+        }
+        for (int p = 1; p <= i; p++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
 }
 int main()
 {
@@ -364,5 +397,5 @@ int main()
     // PR15(5);
     // PR16(5);
     // PR17(5);
-    PR18(5);
+    PR18(20);
 }

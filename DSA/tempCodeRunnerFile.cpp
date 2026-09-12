@@ -1,8 +1,4 @@
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    char ch = 64;
-    cout << ch;
-}
+for (int x = 1; x <= n - (i * 2); x++)
+        // {
+        //     cout << " ";
+        // }
