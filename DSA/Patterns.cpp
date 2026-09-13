@@ -176,9 +176,9 @@ void PR9(int n)
         }
         cout << endl;
     }
-    for (int i = 1; i <= (n / 2); i++)
+    for (int i = 1; i <= (n / 2) + 2; i++)
     {
-        for (int j = 1; j <= (2 * (n / 2) - i - 1); j++)
+        for (int j = 1; j <= (2 * (n / 2) - i - 2); j++)
         {
             cout << "*";
         }
@@ -378,6 +378,41 @@ void PR18(int n)
         cout << endl;
     }
 }
+
+void PR19(int n)
+{
+    int space = (n * 2) - 2;
+    for (int i = 1; i <= (2 * n) - 1; i++)
+    {
+
+        // stars
+        int stars = i;
+        if (i > n)
+            stars = (n * 2) - i;
+
+        for (int j = 1; j <= stars; j++)
+        {
+            cout << "*";
+        }
+
+        // spaces
+        for (int x = 1; x <= space; x++)
+        {
+            cout << " ";
+        }
+
+        // stars
+        for (int j = 1; j <= stars; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+        if (i >= n)
+            space += 2;
+        else
+            space -= 2;
+    }
+}
 int main()
 {
     // PR1(5);
@@ -388,7 +423,8 @@ int main()
     // PR6(5);
     // PR7(5);
     // PR8(5);
-    // PR9(10);
+    // PR9(20);  needs rebuild
+
     // PR10(5);
     // PR11(5);
     // PR12(5);
@@ -397,5 +433,6 @@ int main()
     // PR15(5);
     // PR16(5);
     // PR17(5);
-    PR18(20);
+    // PR18(20);
+    PR19(5);
 }
