@@ -413,6 +413,38 @@ void PR19(int n)
             space -= 2;
     }
 }
+
+void PR20(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        int stars = 1;
+        int spaces = n - 2;
+        if (i == 1 or i == n)
+        {
+            stars = n / 2;
+            spaces = 0;
+        }
+        // stars
+        for (int j = 1; j <= stars; j++)
+        {
+            cout << "*";
+        }
+
+        // spaces
+        for (int k = 1; k <= spaces; k++)
+        {
+            cout << " ";
+        }
+
+        // stars
+        for (int j = 1; j <= stars; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
     // PR1(5);
@@ -434,5 +466,6 @@ int main()
     // PR16(5);
     // PR17(5);
     // PR18(20);
-    PR19(5);
+    // PR19(5);
+    PR20(10);
 }
