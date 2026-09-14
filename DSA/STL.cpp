@@ -13,7 +13,20 @@ void pairs()
     cout << st.second;
 }
 
+void vectors()
+{
+
+    vector<int> v = {5, 2, 6};
+    v.push_back(5);
+    v.emplace_back(6);
+    for (int i = 1; i <= 5; i++)
+    {
+        cout << v[i - 1];
+        cout << endl;
+    }
+}
 int main()
 {
-    pairs();
+    // pairs();
+    vectors();
 }
