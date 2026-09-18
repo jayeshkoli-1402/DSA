@@ -19,10 +19,40 @@ void vectors()
     vector<int> v = {5, 2, 6};
     v.push_back(5);
     v.emplace_back(6);
-    for (int i = 1; i <= 5; i++)
+    // Current v = {5,2,6,5,6}
+    cout << "MY METHOD" << endl;
+    for (int i = 0; i < 3; i++)
     {
-        cout << v[i - 1];
-        cout << endl;
+        cout << v[i] << endl;
+    }
+    cout << endl;
+    cout << "Pofessional Method" << endl;
+
+    vector<int>::iterator it = v.begin();
+    cout << *(it) << endl;
+
+    vector<int>::iterator i = v.end();
+    i--;
+    cout << *(i) << endl;
+
+    cout << "Looping over Iterator" << endl;
+    vector<int>::iterator x = v.begin();
+    for (x; x != v.end(); x++)
+    {
+        cout << *(x) << endl;
+    }
+
+    cout << "Another method" << endl;
+    for (auto c = v.begin(); c != v.end(); c++)
+    {
+        cout << *(c) << endl;
+    }
+
+    cout << "Another method +1" << endl;
+
+    for (auto n : v)
+    {
+        cout << n << endl;
     }
 }
 int main()
