@@ -457,6 +457,11 @@ void PR21(int n)
         cout << endl;
     }
 }
+
+void PR22(int n)
+{
+    // under progress
+}
 int main()
 {
     // PR1(5);
