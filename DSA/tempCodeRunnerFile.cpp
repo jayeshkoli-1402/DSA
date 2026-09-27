@@ -1,6 +1,4 @@
-void vectors_insertion(){
-    vector <int> v1(2,100);
-    cout << v1;
-    
-    
-}
+for (auto x : v2)
+    // {
+    //     cout << x << endl;
+    // }

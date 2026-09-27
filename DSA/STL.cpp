@@ -73,11 +73,16 @@ void vector_opearations()
     vector<int> v2 = {6, 2, 7, 1};
     // v2.clear(); // Clears the vector
     // v2.erase(v2.begin());
-    v2.erase(v2.end());
+    // v2.erase(v2.end() - 1);
+    // v2.pop_back();
+
     for (auto x : v2)
     {
         cout << x << endl;
     }
+
+    cout << "Size: " << v2.size() << endl;
+    cout << "IS Empty: " << v2.empty() << endl;
 }
 int main()
 {
