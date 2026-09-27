@@ -13,7 +13,7 @@ void pairs()
     cout << st.second;
 }
 
-void vectors()
+void vectors_iteration()
 {
 
     vector<int> v = {5, 2, 6};
@@ -55,8 +55,34 @@ void vectors()
         cout << n << endl;
     }
 }
+
+void vectors_insertion()
+{
+    vector<int> v1(2, 100);          // {100, 100}
+    v1.insert(v1.begin(), 200);      // {200, 100, 100}
+    v1.insert(v1.end(), 300);        // {200, 100, 100, 300}
+    v1.insert(v1.end(), {400, 500}); // {200, 100, 100, 300, 400, 500}
+    for (auto x : v1)
+    {
+        cout << x << endl;
+    }
+}
+
+void vector_opearations()
+{
+    vector<int> v2 = {6, 2, 7, 1};
+    // v2.clear(); // Clears the vector
+    // v2.erase(v2.begin());
+    v2.erase(v2.end());
+    for (auto x : v2)
+    {
+        cout << x << endl;
+    }
+}
 int main()
 {
     // pairs();
-    vectors();
+    // vectors_iteration();
+    // vectors_insertion();
+    vector_opearations();
 }
