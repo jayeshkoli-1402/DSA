@@ -84,10 +84,25 @@ void vector_opearations()
     cout << "Size: " << v2.size() << endl;
     cout << "IS Empty: " << v2.empty() << endl;
 }
+
+void lists()
+{
+    list<int> ls;
+    ls.push_back(4);
+    ls.push_back(6);
+    ls.emplace_back(9);
+    ls.push_front(2);
+    ls.emplace_front(1);
+    for (auto x : ls)
+    {
+        cout << x << endl;
+    }
+}
 int main()
 {
     // pairs();
     // vectors_iteration();
     // vectors_insertion();
-    vector_opearations();
+    // vector_opearations();
+    lists();
 }
