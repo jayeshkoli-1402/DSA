@@ -111,6 +111,19 @@ void stacks()
     cout << st.size() << endl;
     cout << st.empty() << endl;
 }
+
+void queues()
+{
+    queue<int> q;
+    q.push(5);
+    q.push(10);
+    q.push(20);
+    cout << q.front() << endl; //[20, 10, '5']
+    q.pop();
+    cout << q.front() << endl; //[20, '10']
+    q.front() += 5;
+    cout << q.front() << endl; //[20, 15]
+}
 int main()
 {
     // pairs();
@@ -118,5 +131,6 @@ int main()
     // vectors_insertion();
     // vector_opearations();
     // lists();
-    stacks();
+    // stacks();
+    queues();
 }
