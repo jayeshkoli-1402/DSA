@@ -98,11 +98,25 @@ void lists()
         cout << x << endl;
     }
 }
+
+void stacks()
+{
+    stack<int> st;
+    st.push(5);
+    st.push(7);
+    st.push(2);
+    cout << st.top() << endl;
+    st.pop();
+    cout << st.top() << endl;
+    cout << st.size() << endl;
+    cout << st.empty() << endl;
+}
 int main()
 {
     // pairs();
     // vectors_iteration();
     // vectors_insertion();
     // vector_opearations();
-    lists();
+    // lists();
+    stacks();
 }
