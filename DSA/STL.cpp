@@ -132,5 +132,5 @@ int main()
     // vector_opearations();
     // lists();
     // stacks();
-    queues();
+    // queues();
 }

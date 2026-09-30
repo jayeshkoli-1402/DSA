@@ -1,1 +1,68 @@
-This repo is made to store the DSA code.
+# 🚀 Data Structures and Algorithms (DSA) in C++
+
+Welcome to my DSA repository! This space is dedicated to building a strong foundation in problem-solving, mastering **C++ programming**, and implementing standard Data Structures and Algorithms.
+
+---
+
+## 📂 Repository Structure
+
+Based on my local setup, the project is structured as follows:
+
+```text
+├── CPP Basics/           # Foundations and syntax fundamentals
+│   ├── Arrays.cpp
+│   ├── Conditionals.cpp
+│   ├── DataType.cpp
+│   ├── Patterns.cpp
+│   └── Test.cpp
+├── DSA/                  # Core Data Structures & Algorithms
+│   ├── Patterns.cpp
+│   └── STL.cpp           # Standard Template Library implementations
+├── .gitignore
+└── ReadME.md
+```
+
+---
+
+## 🛠️ Environment & Setup
+
+* **Language:** `C++ (C++17 or higher recommended)`
+* **Compiler:** `g++` (GCC)
+* **Editor:** VS Code
+
+### Running the Code Locally
+
+To compile and execute any script manually from the terminal, run the following commands:
+
+```bash
+# 1. Navigate to the desired folder
+cd "CPP Basics"
+
+# 2. Compile the file
+g++ Arrays.cpp -o Arrays
+
+# 3. Run the executable
+./Arrays
+```
+
+---
+
+## 🧠 Roadmap & Progress Tracker
+
+| Category | Folder / Focus Area | Topics Covered | Status |
+| :--- | :--- | :--- | :--- |
+| **C++ Basics** | `CPP Basics/` | Data types, conditional blocks, structural loop patterns, array initialization. | ✅ Completed |
+| **Standard Template Library** | `DSA/` | Vectors, Lists, Iterators, Maps, Stacks, Queues (`STL.cpp`). | 🔄 In Progress |
+| **Algorithms** | `DSA/` *(Upcoming)* | Sorting, Searching, Dynamic Programming, Greedy Algorithms. | 📅 Planned |
+
+---
+
+## ⚙️ Configuration Notes
+
+* **Git Ignore (`.gitignore`):** Configured to automatically exclude environment-specific executable items like `*.exe` and execution logs such as `tempCodeRunnerFile.cpp` to ensure the remote repository stays clean.
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repository, suggest optimizations, or submit pull requests for alternative solutions!
