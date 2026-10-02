@@ -133,23 +133,39 @@ void sets()
     st.emplace(4);
     st.insert(6);
 
-    // for (auto x : st)
-    // {
-    //     cout << x << endl;
-    // }
-    // auto it = st.find(6);
+    for (auto x : st)
+    {
+        cout << x << endl;
+    }
+    auto it = st.find(6);
 
-    // cout << *it << endl;
-    // st.erase(4);
+    cout << *it << endl;
+    st.erase(4);
 
-    // for (auto y : st)
-    // {
-    //     cout << y << endl;
-    // }
+    for (auto y : st)
+    {
+        cout << y << endl;
+    }
 
     auto cut = st.count(4);
 
     cout << cut;
+}
+
+void maps()
+{
+    map<int, int> mp;
+    mp.insert({1, 5});
+    mp.insert({5, 5});
+    mp.insert({3, 5});
+    mp.insert({6, 5});
+    mp[2] = 4;
+    // cout << mp[2] << endl;
+
+    for (auto i = 0; i <= mp.size(); i++)
+    {
+        mp[i];
+    }
 }
 int main()
 {
@@ -160,5 +176,8 @@ int main()
     // lists();
     // stacks();
     // queues();
-    sets();
+    // sets();
+    // Multiset is exactly same as set it just stores duplicate values
+    // Unordered set is exactly same as set just lower bound and uppder bound does not work and it stored data in any order
+    maps();
 }
