@@ -124,6 +124,33 @@ void queues()
     q.front() += 5;
     cout << q.front() << endl; //[20, 15]
 }
+
+void sets()
+{
+    set<int> st;
+
+    st.emplace(4);
+    st.emplace(4);
+    st.insert(6);
+
+    // for (auto x : st)
+    // {
+    //     cout << x << endl;
+    // }
+    // auto it = st.find(6);
+
+    // cout << *it << endl;
+    // st.erase(4);
+
+    // for (auto y : st)
+    // {
+    //     cout << y << endl;
+    // }
+
+    auto cut = st.count(4);
+
+    cout << cut;
+}
 int main()
 {
     // pairs();
@@ -133,4 +160,5 @@ int main()
     // lists();
     // stacks();
     // queues();
+    sets();
 }
